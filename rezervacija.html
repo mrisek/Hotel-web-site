@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Hotel Opatija</title>
+    <meta name="author" content="Matija Risek" />
+    <meta name="description" content="Hotel Opatija" />
+    <meta name="keywords" content="Hrvatska, Opatija, hotel, Jadransko more, ljetovanje, turizam" />
+    <meta name="designer" content="Risek Design" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="style/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body onload="startTime()">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Hotel<span class="logo_colour">Opatija</span></a></h1>
+          <h2>Ljetovanje. Odmor. Sport & Priroda.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="cjenik.html">Cjenik</a></li>
+          <li class="selected"><a href="rezervacija.html">Rezervacija</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+
+            <h3>Novosti</h3>
+            <h4>Otvoren vanjski bazen!</h4>
+            <h5>1. svibnja, 2014</h5>
+            <span class="left"><img src="style/bazen.jpg" alt="example graphic" /></span>
+            <p>Početkom nove sezone u pogon je pušten obnovljeni i prošireni bazen ispred Hotela. Pogledate kako je izgledalo otvorenje!<br /><a href="#" onclick="openWin();return false">Saznaj više</a></p>
+            <hr />
+
+            <h4>Hotel kompletno renoviran!</h4>
+            <h5>21. siječnja, 2014.</h5>
+            <span class="left"><img src="style/hotel.jpg" alt="example graphic" /></span>
+            <p>Zahvaljujući ulasku Republike Hrvatske u Europsku Uniju, kompletno je subvencionirana renovacija najstarijeg postojećeg hotela na Jadranu!<br /><a href="#" onclick="openWin();return false">Saznaj više</a></p>
+            <hr />
+
+            <h3>Korisni linkovi</h3>
+            <ul>
+                <li><a href="http://www.gss.hr/">HGSS</a></li>
+                <li><a href="http://www.mup.hr/">MUP</a></li>
+                <li><a href="http://www.hak.hr/">HAK</a></li>
+                <li><a href="http://www.meteo-info.hr/grad/opatija">Vremenska prognoza</a></li>
+            </ul>
+            <hr />
+
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+                <p>
+                    <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+                </p>
+            </form>
+
+        </div>
+
+        <div id="content">
+            <!-- insert the page content here -->
+            <h1>Rezervacija</h1>
+            <p>
+                Ovdje možete unijeti detalje vaše rezervacije ili upita.
+                Svi osobni podaci koje unesete moraju biti ispravni.
+                Slanjem upita prihvaćate uvjete i politiku Hotela Opatija.
+            </p>
+
+            <hr />
+            <h2>Unos rezervacije/upita</h2>
+
+                <form name="myForm" onsubmit="return validateForm()" action="mailto:mrisek@net.hr" method="post">
+                   
+
+                        <p>
+                            <!-- Ime, prezime, itd... -->
+                            Ime:<br />
+                            </><input type="text" name="fIme"><br />
+                        </p>
+
+                        <p>
+                            Prezime:<br />
+                            <input type="text" name="fPrezime"><br />
+                        </p>
+
+                        <p>
+                            Država:<br />
+                            <input type="text" name="fDrzava"><br />
+                        </p>
+
+                        <p>
+                            E-mail:<br />
+                            <input type="text" name="mail" /><br />
+                        </p>
+
+
+
+                        <p>
+                            <!-- Izbornik -->
+                            Tip sobe:
+                            <span class="tab"></span>
+                            <select size="1" name="fTipSobe">
+                                <option value="">Odaberite željenu sobu...</option>
+                                <option value="2"> 1/1 Park </option>
+                                <option value="3"> 1/2 Park </option>
+                                <option value="4"> 1/2 More </option>
+                                <option value="5"> Potkrovlje </option>
+                            </select>
+                        </p>
+
+
+
+                        <p>
+                            <!-- Textarea -->
+                            Dodatni zahtjevi:<br />
+                            <textarea rows="3" id="Datum" cols="20"></textarea>
+                        </p>
+
+
+                        <p>
+                            <!-- Radio gumbi -->
+                            Doručak:
+                            <input type="radio" name="prehrana" id="dorucak" /><br />
+                            Polupansion
+                            <input type="radio" name="prehrana" id="polupansion" />
+                        </p>
+
+
+
+                        <p>
+                            <!-- Potvrdni okvir -->
+                            Da, potvrđujem kako su svi uneseni podaci ispravni
+                            <span class="tab"></span>
+                            <input class="checkbox" type="checkbox" id="yes" value="1" />
+                        </p>
+
+                        <p></p>
+
+
+
+                    <div class="form_settings">
+                        <p>
+                            <!-- Tipke "Submit" i "Reset" -->
+                            <input class="submit" name="gumb1" type="submit" value="Pošalji">
+
+                        </p>
+                        <p>
+                            <input class="submit" type="reset" value="Obriši" name="gumb2" />
+                        </p>
+                    </div>
+
+                </form>
+
+
+
+</div>
+    </div>
+
+
+    <div id="content_footer"></div>
+    <div id="footer">
+        Copyright &copy; Matija Risek | <a href="https://www.facebook.com/matija.risek">Facebook</a> | <a href="http://www.w3schools.com/">W3Schools</a> | <a href="http://www.general-turist.com/">GeneralTurist</a><div id="txt"></div>
+    </div>
+  </div>
+</body>
+</html>

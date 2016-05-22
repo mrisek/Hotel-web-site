@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Hotel Opatija</title>
+  <meta name="author" content="Matija Risek" />
+  <meta name="description" content="Hotel Opatija" />
+  <meta name="keywords" content="Hrvatska, Opatija, hotel, Jadransko more, ljetovanje, turizam" />
+  <meta name="designer" content="Risek Design" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/javascript" src="style/js.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body onload="startTime()">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Hotel<span class="logo_colour">Opatija</span></a></h1>
+          <h2>Ljetovanje. Odmor. Sport & Priroda.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="cjenik.html">Cjenik</a></li>
+          <li><a href="rezervacija.html">Rezervacija</a></li>
+          <li class="selected"><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+
+            <h3>Novosti</h3>
+            <h4>Otvoren vanjski bazen!</h4>
+            <h5>1. svibnja, 2014</h5>
+            <span class="left"><img src="style/bazen.jpg" alt="example graphic" /></span>
+            <p>Početkom nove sezone u pogon je pušten obnovljeni i prošireni bazen ispred Hotela. Pogledate kako je izgledalo otvorenje!<br /><a href="#" onclick="openWin();return false">Saznaj više</a></p>
+            <hr />
+
+            <h4>Hotel kompletno renoviran!</h4>
+            <h5>21. siječnja, 2014.</h5>
+            <span class="left"><img src="style/hotel.jpg" alt="example graphic" /></span>
+            <p>Zahvaljujući ulasku Republike Hrvatske u Europsku Uniju, kompletno je subvencionirana renovacija najstarijeg postojećeg hotela na Jadranu!<br /><a href="#" onclick="openWin();return false">Saznaj više</a></p>
+            <hr />
+
+            <h3>Korisni linkovi</h3>
+            <ul>
+                <li><a href="http://www.gss.hr/">HGSS</a></li>
+                <li><a href="http://www.mup.hr/">MUP</a></li>
+                <li><a href="http://www.hak.hr/">HAK</a></li>
+                <li><a href="http://www.meteo-info.hr/grad/opatija">Vremenska prognoza</a></li>
+            </ul>
+            <hr />
+
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+                <p>
+                    <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+                </p>
+            </form>
+
+        </div>
+
+        <div id="content">
+            <!-- insert the page content here -->
+            <h1>Galerija</h1>
+            <p>
+                <script type="text/javascript"
+                        src="http://slideshow.triptracker.net/slide.js"></script>
+                <script type="text/javascript">
+<!--
+  var izvana = new PhotoViewer();
+  izvana.add('style/izvana1.jpg');
+  izvana.add('style/izvana2.jpg');
+  izvana.add('style/izvana3.jpg');
+  izvana.add('style/izvana4.jpg');
+  izvana.add('style/izvana5.jpg');
+
+  var interijer = new PhotoViewer();
+  interijer.add('style/unutra1.jpg');
+  interijer.add('style/unutra2.jpg');
+  interijer.add('style/unutra3.jpg');
+  interijer.add('style/unutra4.jpg');
+  interijer.add('style/unutra5.jpg');
+
+  var bazen = new PhotoViewer();
+  bazen.add('style/bazen1.jpg');
+  bazen.add('style/bazen2.jpg');
+  bazen.add('style/bazen3.jpg');
+  bazen.add('style/bazen4.jpg');
+  bazen.add('style/bazen5.jpg');
+
+  var terasa = new PhotoViewer();
+  terasa.add('style/terasa1.jpg');
+  terasa.add('style/terasa2.jpg');
+  terasa.add('style/terasa3.jpg');
+  terasa.add('style/terasa4.jpg');
+  terasa.add('style/terasa5.jpg');
+
+  var vrt = new PhotoViewer();
+  vrt.add('style/vrt1.jpg');
+  vrt.add('style/vrt2.jpg');
+  vrt.add('style/vrt3.jpg');
+  vrt.add('style/vrt4.jpg');
+  vrt.add('style/vrt5.jpg');
+
+//--></script>
+                <a href="javascript:void(izvana.show(0))">Hotel</a>
+                <a href="javascript:void(interijer.show(0))">Sobe</a>
+                <a href="javascript:void(bazen.show(0))">Bazen</a>
+                <a href="javascript:void(terasa.show(0))">Terasa</a>
+                <a href="javascript:void(vrt.show(0))">Vrt</a>
+
+            </p>
+
+            <span class="left"><img src="style/kip.jpg" alt="example graphic" /></span>
+
+        </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+        Copyright &copy; Matija Risek | <a href="https://www.facebook.com/matija.risek">Facebook</a> | <a href="http://www.w3schools.com/">W3Schools</a> | <a href="http://www.general-turist.com/">GeneralTurist</a><div id="txt"></div>
+    </div>
+  </div>
+</body>
+</html>

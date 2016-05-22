@@ -1,0 +1,102 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Hotel Opatija</title>
+    <meta name="author" content="Matija Risek" />
+    <meta name="description" content="Hotel Opatija" />
+    <meta name="keywords" content="Hrvatska, Opatija, hotel, Jadransko more, ljetovanje, turizam" />
+    <meta name="designer" content="Risek Design" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="style/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body onload="randomLink()">
+    <img border="0" src="style/popupheader.jpg" alt="popupheader" width="404" height="146" />
+
+    <ul id="sddm">
+        <li>
+            <a href="#"
+               onmouseover="mopen('m1')"
+               onmouseout="mclosetime()">Novosti</a>
+            <div id="m1"
+                 onmouseover="mcancelclosetime()"
+                 onmouseout="mclosetime()">
+                <a href="http://www.google.hr/">Novo</a>
+                <a href="http://www.index.hr/">Staro</a>
+                <a href="http://www.net.hr/">Arhiva</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#"
+               onmouseover="mopen('m2')"
+               onmouseout="mclosetime()">Cjenik</a>
+            <div id="m2"
+                 onmouseover="mcancelclosetime()"
+                 onmouseout="mclosetime()">
+                <a href="#">Tečaj</a>
+                <a href="#">Sezona</a>
+                <a href="#">Prehrana</a>
+                <a href="#">Bazen</a>
+            </div>
+        </li>
+
+        <li>
+        <a href="#"
+           onmouseover="mopen('m3')"
+           onmouseout="mclosetime()">Rezervacija</a>
+        <div id="m3"
+             onmouseover="mcancelclosetime()"
+             onmouseout="mclosetime()">
+            <a href="#">Akcije</a>
+            <a href="#">Formular</a>
+            <a href="#">Kalkulator</a>
+        </div>
+        </li>
+
+
+        <li>
+            <a href="#"
+               onmouseover="mopen('m4')"
+               onmouseout="mclosetime()">Pomoć</a>
+            <div id="m4"
+                 onmouseover="mcancelclosetime()"
+                 onmouseout="mclosetime()">
+                <a href="#">Upute</a>
+                <a href="#">Pravila</a>
+                <a href="#">Sistem</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#"
+               onmouseover="mopen('m5')"
+               onmouseout="mclosetime()">Kontakt</a>
+            <div id="m5"
+                 onmouseover="mcancelclosetime()"
+                 onmouseout="mclosetime()">
+                <a href="#">Gazda</a>
+                <a href="#">Održavanje</a>
+                <a href="#">E-mail</a>
+            </div>
+        </li>
+
+    </ul>
+    <div style="clear:both"></div>
+
+
+    <div style="width:404px">
+        <img border="0" src="style/bazen3.jpg" alt="opatija" width="404" />
+        <h2 align="center">Otvoren vanjski bazen</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.
+            <div id="link"></div>
+            <button onclick="closeWin()">Zatvori ovaj prozor</button>
+
+        </p>
+    </div>
+
+</body>
+</html>

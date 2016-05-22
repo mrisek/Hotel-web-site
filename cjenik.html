@@ -1,0 +1,205 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Hotel Opatija</title>
+    <meta name="author" content="Matija Risek" />
+    <meta name="description" content="Hotel Opatija" />
+    <meta name="keywords" content="Hrvatska, Opatija, hotel, Jadransko more, ljetovanje, turizam" />
+    <meta name="designer" content="Risek Design" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="style/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body onload="startTime()">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Hotel<span class="logo_colour">Opatija</span></a></h1>
+          <h2>Ljetovanje. Odmor. Sport & Priroda.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Početna</a></li>
+          <li class="selected"><a href="cjenik.html">Cjenik</a></li>
+          <li><a href="rezervacija.html">Rezervacija</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+
+            <h3>Novosti</h3>
+            <h4>Otvoren vanjski bazen!</h4>
+            <h5>1. svibnja, 2014</h5>
+            <span class="left"><img src="style/bazen.jpg" alt="example graphic" /></span>
+            <p>Početkom nove sezone u pogon je pušten obnovljeni i prošireni bazen ispred Hotela. Pogledate kako je izgledalo otvorenje!<br /><a href="#" onclick="openWin();return false">Saznaj više</a></p>
+            <hr />
+
+            <h4>Hotel kompletno renoviran!</h4>
+            <h5>21. siječnja, 2014.</h5>
+            <span class="left"><img src="style/hotel.jpg" alt="example graphic" /></span>
+            <p>Zahvaljujući ulasku Republike Hrvatske u Europsku Uniju, kompletno je subvencionirana renovacija najstarijeg postojećeg hotela na Jadranu!<br /><a href="#" onclick="openWin();return false">Saznaj više</a></p>
+            <hr />
+
+            <h3>Korisni linkovi</h3>
+            <ul>
+                <li><a href="http://www.gss.hr/">HGSS</a></li>
+                <li><a href="http://www.mup.hr/">MUP</a></li>
+                <li><a href="http://www.hak.hr/">HAK</a></li>
+                <li><a href="http://www.meteo-info.hr/grad/opatija">Vremenska prognoza</a></li>
+            </ul>
+            <hr />
+
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+                <p>
+                    <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+                </p>
+            </form>
+
+        </div>
+
+        <div id="content">
+            <!-- insert the page content here -->
+            <h1>Cjenik</h1>
+            <p>Valuta naplate je kuna. Cijene su podložne promjenama u bilo koje vrijeme bez prethodne obavijesti, a ovisno o promjenama tečaja. Konačna cijena će biti izračunata na dan rezervacije. Istaknute cijene smještaja su bez uračunatog PDV-a i boravišne pristojbe.</p>
+
+            <hr />
+            <h2>Cijene smještaja</h2>
+            <table style="width:100%; border-spacing:0;">
+                <tr><th>Soba</th><th>Usluga</th><th>Cijena</th></tr>
+                <tr><td>1/1 PARK</td><td>Noćenje s doručkom</td><td>410,00 kn</td></tr>
+                <tr><td>1/1 PARK</td><td>Polupansion</td><td>494,00 kn</td></tr>
+                <tr><td>1/2 PARK</td><td>Noćenje s doručkom</td><td>547,00 kn</td></tr>
+                <tr><td>1/2 PARK</td><td>Polupansion</td><td>715,00 kn</td></tr>
+                <tr><td>1/2 MORE</td><td>Noćenje s doručkom</td><td>623,00 kn</td></tr>
+                <tr><td>1/2 MORE</td><td>Polupansion</td><td>791,00 kn</td></tr>
+                <tr><td>1/2 MORE</td><td>Noćenje s doručkom</td><td>486,00 kn</td></tr>
+                <tr><td>1/1 MORE</td><td>Polupansion</td><td>570,00 kn</td></tr>
+                <tr><td>Potkrovlje</td><td>Noćenje s doručkom</td><td>349,00 kn</td></tr>
+                <tr><td>Potkrovlje</td><td>Polupansion</td><td>433,00 kn</td></tr>
+                <tr><td>Potkrovlje</td><td>Noćenje s doručkom</td><td>465,00 kn</td></tr>
+                <tr><td>Potkrovlje</td><td>Polupansion</td><td>633,00 kn</td></tr>
+            </table>
+
+            <hr />
+            <h2>Dodatni sadržaji</h2>
+            <ul>
+                <li>Nogometni teren: 60,00 kn - 1h</li>
+                <li>Teniski teren: 60,00 kn - 1h</li>
+                <li>Bazen: 30,00 kn - 1h</li>
+                <li>Ležaljka: 15,00 kn - 1h</li>
+                <li>Za kućne ljubimce: 50,00 kn po danu</li>
+                <li>Parking: 30,00 kn po danu</li>
+                <li>Klima: 75,00 kn po danu</li>
+                <li>Pogled na more: 75,00 kn po danu</li>
+                <li>Sef na recepciji: 10,00 kn po danu</li>
+                <li>Boravišna pristojba: 7,00 kn po danu</li>
+            </ul>
+
+            <hr />
+            <h2>Kalkulator</h2>
+
+            <!-- Kalkulator - JavaScript -->
+            <table class="calculator" id="calc">
+                <tr>
+                    <td colspan="4" class="calc_td_result">
+                        <input type="text" readonly="readonly" name="calc_result" id="calc_result" class="calc_result" onkeydown="javascript:key_detect_calc('calc',event);" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="CE" onclick="javascript:f_calc('calc','ce');" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&larr;" onclick="javascript:f_calc('calc','nbs');" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="%" onclick="javascript:f_calc('calc','%');" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="+" onclick="javascript:f_calc('calc','+');" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="7" onclick="javascript:add_calc('calc',7);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="8" onclick="javascript:add_calc('calc',8);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="9" onclick="javascript:add_calc('calc',9);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="-" onclick="javascript:f_calc('calc','-');" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="4" onclick="javascript:add_calc('calc',4);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="5" onclick="javascript:add_calc('calc',5);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="6" onclick="javascript:add_calc('calc',6);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="x" onclick="javascript:f_calc('calc','*');" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="1" onclick="javascript:add_calc('calc',1);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="2" onclick="javascript:add_calc('calc',2);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="3" onclick="javascript:add_calc('calc',3);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&divide;" onclick="javascript:f_calc('calc','');" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="0" onclick="javascript:add_calc('calc',0);" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="," onclick="javascript:add_calc('calc','.');" />
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="=" onclick="javascript:f_calc('calc','=');" />
+                    </td>
+                </tr>
+            </table>
+            <script type="text/javascript">
+                document.getElementById('calc').onload = init_calc('calc');
+            </script>
+
+
+        </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+        Copyright &copy; Matija Risek | <a href="https://www.facebook.com/matija.risek">Facebook</a> | <a href="http://www.w3schools.com/">W3Schools</a> | <a href="http://www.general-turist.com/">GeneralTurist</a><div id="txt"></div>
+    </div>
+  </div>
+</body>
+</html>
